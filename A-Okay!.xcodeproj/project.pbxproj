@@ -15,6 +15,8 @@
 		5C031ABF20219BA200F3D059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C031ABD20219BA200F3D059 /* LaunchScreen.storyboard */; };
 		5C031ACA20219BA500F3D059 /* A_Okay_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C031AC920219BA500F3D059 /* A_Okay_Tests.swift */; };
 		5C031AD520219BA500F3D059 /* A_Okay_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C031AD420219BA500F3D059 /* A_Okay_UITests.swift */; };
+		5C3C36132023CB8100BCD943 /* MainUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C36122023CB8100BCD943 /* MainUIController.swift */; };
+		5C3C3615202407DD00BCD943 /* breatheController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C3614202407DD00BCD943 /* breatheController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5C031AD020219BA500F3D059 /* A-Okay!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "A-Okay!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C031AD420219BA500F3D059 /* A_Okay_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A_Okay_UITests.swift; sourceTree = "<group>"; };
 		5C031AD620219BA600F3D059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C3C36122023CB8100BCD943 /* MainUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUIController.swift; sourceTree = "<group>"; };
+		5C3C3614202407DD00BCD943 /* breatheController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breatheController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,8 @@
 		5C031AB020219B9F00F3D059 /* A-Okay! */ = {
 			isa = PBXGroup;
 			children = (
+				5C0E672F202537E800AE02E4 /* ViewControllers */,
 				5C031AB120219BA000F3D059 /* AppDelegate.swift */,
-				5C031AB320219BA000F3D059 /* ViewController.swift */,
 				5C031AB520219BA100F3D059 /* Main.storyboard */,
 				5C031ABB20219BA200F3D059 /* Assets.xcassets */,
 				5C031ABD20219BA200F3D059 /* LaunchScreen.storyboard */,
@@ -126,6 +130,16 @@
 				5C031AD620219BA600F3D059 /* Info.plist */,
 			);
 			path = "A-Okay!UITests";
+			sourceTree = "<group>";
+		};
+		5C0E672F202537E800AE02E4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C3C36122023CB8100BCD943 /* MainUIController.swift */,
+				5C3C3614202407DD00BCD943 /* breatheController.swift */,
+				5C031AB320219BA000F3D059 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3C36132023CB8100BCD943 /* MainUIController.swift in Sources */,
 				5C031AB420219BA000F3D059 /* ViewController.swift in Sources */,
 				5C031ABA20219BA200F3D059 /* A_Okay_.xcdatamodeld in Sources */,
+				5C3C3615202407DD00BCD943 /* breatheController.swift in Sources */,
 				5C031AB220219BA000F3D059 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +454,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.tylerjphillips.A-Okay-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,7 +470,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "xyz.tylerjphillips.A-Okay-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
